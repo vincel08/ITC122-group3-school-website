@@ -26,12 +26,12 @@ ITC 122 - Intro to Web Design  - Group 3 Project Website
 ## 📂 Project Structure
 
 ⚙️ Installation
-1. Clone the repository
+# Clone the repository
 git clone https://github.com/USERNAME/REPO_NAME.git
 cd REPO_NAME
-2. Install dependencies
+# Install dependencies
 npm install
-3. Start development server
+# Start development server
 npm run dev
 
 Then open:

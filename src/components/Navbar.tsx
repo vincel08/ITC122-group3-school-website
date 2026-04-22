@@ -1,7 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import depedLogo from "@/assets/deped-logo.png";
+import depedLogo from "../assets/deped-logo.png";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -35,20 +35,12 @@ export default function Navbar() {
           className="flex items-center gap-3"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <img
-            src={depedLogo}
-            alt="School seal"
-            width={44}
-            height={44}
-            className="rounded-full"
-          />
+          <img src={depedLogo} alt="School seal" width={44} height={44} className="rounded-full" />
           <div className="leading-tight">
             <span className="block text-sm font-bold text-primary sm:text-base">
               Jesus S. Cabarrus
             </span>
-            <span className="block text-xs text-muted-foreground">
-              Elementary School
-            </span>
+            <span className="block text-xs text-muted-foreground">Elementary School</span>
           </div>
         </Link>
 

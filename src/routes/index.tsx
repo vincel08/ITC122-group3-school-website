@@ -1,8 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import HeroSection from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
-import AboutPreview from "@/components/AboutPreview";
-import ProgramsPreview from "@/components/ProgramsPreview";
+import { HomePage } from "../pages/HomePage";
 
 export const Route = createFileRoute("/")({
   component: HomePage,
@@ -17,14 +14,3 @@ export const Route = createFileRoute("/")({
     ],
   }),
 });
-
-function HomePage() {
-  return (
-    <>
-      <HeroSection />
-      <StatsSection />
-      <AboutPreview />
-      <ProgramsPreview />
-    </>
-  );
-}

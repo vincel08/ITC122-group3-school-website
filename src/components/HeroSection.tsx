@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ChevronDown } from "lucide-react";
-import heroImg from "@/assets/hero-school.jpg";
+import heroImg from "../assets/hero-school.jpg";
 
 export default function HeroSection() {
   return (
@@ -23,8 +23,8 @@ export default function HeroSection() {
           Elementary School
         </h1>
         <p className="mt-4 max-w-xl text-base text-primary-foreground/80 drop-shadow-md sm:text-lg">
-          Nurturing young minds with quality education since 1977 — building a
-          brighter future for every child.
+          Nurturing young minds with quality education since 1977 — building a brighter future for
+          every child.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Link

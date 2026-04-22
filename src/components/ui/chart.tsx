@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 
 // Format: { THEME_NAME: CSS_SELECTOR }
 const THEMES = { light: "", dark: ".dark" } as const;
@@ -14,6 +14,65 @@ export type ChartConfig = {
     | { color?: string; theme?: never }
     | { color?: never; theme: Record<keyof typeof THEMES, string> }
   );
+};
+
+type RechartsPayload = {
+  fill?: string;
+  stroke?: string;
+};
+
+function isRechartsPayload(payload: unknown): payload is RechartsPayload {
+  return typeof payload === "object" && payload !== null && "fill" in payload;
+}
+
+type SafeLegendProps = {
+  payload?: Array<{
+    value?: string;
+    dataKey?: string;
+    color?: string;
+    type?: string;
+    payload?: unknown;
+  }>;
+  verticalAlign?: "top" | "bottom";
+};
+
+type TooltipItem = {
+  dataKey?: string;
+  name?: string;
+  value?: number | string;
+  color?: string;
+  type?: string;
+  payload?: unknown;
+};
+
+type SafeTooltipProps = {
+  active?: boolean;
+  payload?: TooltipItem[];
+  label?: unknown;
+  className?: string;
+
+  indicator?: "line" | "dot" | "dashed";
+  hideLabel?: boolean;
+  hideIndicator?: boolean;
+
+  labelFormatter?: (
+    label: unknown,
+    payload: TooltipItem[] | undefined,
+  ) => React.ReactNode;
+
+  labelClassName?: string;
+
+  formatter?: (
+    value: unknown,
+    name: unknown,
+    item: TooltipItem,
+    index: number,
+    payload: unknown,
+  ) => React.ReactNode;
+
+  color?: string;
+  nameKey?: string;
+  labelKey?: string;
 };
 
 type ChartContextProps = {
@@ -102,7 +161,8 @@ const ChartTooltip = RechartsPrimitive.Tooltip;
 
 const ChartTooltipContent = React.forwardRef<
   HTMLDivElement,
-  React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
+  React.ComponentProps<"div"> &
+    SafeTooltipProps &
     React.ComponentProps<"div"> & {
       hideLabel?: boolean;
       hideIndicator?: boolean;
@@ -188,7 +248,12 @@ const ChartTooltipContent = React.forwardRef<
             .map((item, index) => {
               const key = `${nameKey || item.name || item.dataKey || "value"}`;
               const itemConfig = getPayloadConfigFromPayload(config, item, key);
-              const indicatorColor = color || item.payload.fill || item.color;
+              const indicatorColor =
+                color ||
+                (isRechartsPayload(item.payload)
+                  ? item.payload.fill
+                  : undefined) ||
+                item.color;
 
               return (
                 <div
@@ -261,7 +326,7 @@ const ChartLegend = RechartsPrimitive.Legend;
 const ChartLegendContent = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<"div"> &
-    Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
+    SafeLegendProps & {
       hideIcon?: boolean;
       nameKey?: string;
     }

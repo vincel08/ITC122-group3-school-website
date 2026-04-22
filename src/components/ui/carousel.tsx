@@ -4,8 +4,8 @@ import useEmblaCarousel, {
 } from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { cn } from "../../lib/utils";
+import { Button } from "./button";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -66,15 +66,6 @@ const Carousel = React.forwardRef<
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);
 
-    const onSelect = React.useCallback((api: CarouselApi) => {
-      if (!api) {
-        return;
-      }
-
-      setCanScrollPrev(api.canScrollPrev());
-      setCanScrollNext(api.canScrollNext());
-    }, []);
-
     const scrollPrev = React.useCallback(() => {
       api?.scrollPrev();
     }, [api]);
@@ -105,18 +96,23 @@ const Carousel = React.forwardRef<
     }, [api, setApi]);
 
     React.useEffect(() => {
-      if (!api) {
-        return;
-      }
+      if (!api) return;
 
-      onSelect(api);
-      api.on("reInit", onSelect);
-      api.on("select", onSelect);
+      const handleSelect = () => {
+        setCanScrollPrev(api.canScrollPrev());
+        setCanScrollNext(api.canScrollNext());
+      };
+
+      handleSelect();
+
+      api.on("reInit", handleSelect);
+      api.on("select", handleSelect);
 
       return () => {
-        api?.off("select", onSelect);
+        api.off("select", handleSelect);
+        api.off("reInit", handleSelect);
       };
-    }, [api, onSelect]);
+    }, [api, setCanScrollNext, setCanScrollPrev]);
 
     return (
       <CarouselContext.Provider

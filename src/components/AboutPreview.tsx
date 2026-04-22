@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import studentsImg from "@/assets/students-classroom.jpg";
+import studentsImg from "../assets/students-classroom.jpg";
 import FadeInOnScroll from "./FadeInOnScroll";
 
 export default function AboutPreview() {
@@ -28,17 +28,15 @@ export default function AboutPreview() {
               Building Futures Since 1977
             </h2>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Jesus S. Cabarrus Elementary School is a non-central school
-              located in the compound of Solid Cement Corporation, Sitio Tagbac,
-              Barangay San Jose, Antipolo City. Named after Mr. Jesus S.
-              Cabarrus, the school was established through a Deed of Donation
-              and has been committed to providing quality education to the
-              community ever since.
+              Jesus S. Cabarrus Elementary School is a non-central school located in the compound of
+              Solid Cement Corporation, Sitio Tagbac, Barangay San Jose, Antipolo City. Named after
+              Mr. Jesus S. Cabarrus, the school was established through a Deed of Donation and has
+              been committed to providing quality education to the community ever since.
             </p>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              With 52 nationally funded teachers led by Principal Mrs. Mary Jane
-              G. Halili, the school serves over 2,400 pupils across 32 academic
-              classrooms, an ICT room, library, and dedicated feeding areas.
+              With 52 nationally funded teachers led by Principal Mrs. Mary Jane G. Halili, the
+              school serves over 2,400 pupils across 32 academic classrooms, an ICT room, library,
+              and dedicated feeding areas.
             </p>
             <Link
               to="/about"

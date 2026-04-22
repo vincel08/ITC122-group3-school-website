@@ -27,17 +27,15 @@ ITC 122 - Intro to Web Design  - Group 3 Project Website
 
 ⚙️ Installation
 # Clone the repository
-git clone https://github.com/USERNAME/REPO_NAME.git
-cd REPO_NAME
+- git clone https://github.com/vincel08/ITC122-group3-school-website.git
+- cd REPO_NAME
 # Install dependencies
-npm install
+- npm install
 # Start development server
-npm run dev
+- npm run dev
 
-Then open:
-
-http://localhost:5173
-📦 Build for Production
-npm run build
-👀 Preview Production Build
-npm run preview
+- Then open: http://localhost:5173
+# Build for Production
+- npm run build
+# 👀 Preview Production Build
+- npm run preview

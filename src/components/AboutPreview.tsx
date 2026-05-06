@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import studentsImg from "../assets/students-classroom.jpg";
+import studentsImg from "../assets/JSCES_1.jpg";
 import FadeInOnScroll from "./FadeInOnScroll";
 
 export default function AboutPreview() {
@@ -11,7 +11,7 @@ export default function AboutPreview() {
           <div className="overflow-hidden rounded-2xl">
             <img
               src={studentsImg}
-              alt="Students in classroom"
+              alt="Students in front of school"
               width={1280}
               height={720}
               loading="lazy"

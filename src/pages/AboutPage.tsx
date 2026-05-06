@@ -1,4 +1,4 @@
-import studentsImg from "../assets/students-classroom.jpg";
+import studentsImg from "../assets/JSCES_1.jpg";
 import FadeInOnScroll from "../components/FadeInOnScroll";
 
 export function AboutPage() {
@@ -64,8 +64,13 @@ export function AboutPage() {
             <div className="rounded-xl border border-border bg-card p-8 h-full">
               <h2 className="text-xl font-bold text-primary">Mission</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                To provide quality, accessible, relevant, and liberating basic education for all
-                through a responsive curriculum, effective teaching, and community partnerships.
+                To protect and promote the right of every Filipino to quality, equitable,
+                culture-based, and complete basic education where: Students leam in a
+                child-friendly, gender sensitive, safe and motivating environment Teachers
+                facilitate leaming and constantly nurture every leamer Administrators and staff, as
+                stewards of the institution, ensure an enabling and supportive environment for
+                effective learning to happen Family, community and other stakeholders are actively
+                engaged and share responsibility for developing lifelong learners
               </p>
             </div>
           </FadeInOnScroll>
@@ -73,10 +78,17 @@ export function AboutPage() {
             <div className="rounded-xl border border-border bg-card p-8 h-full">
               <h2 className="text-xl font-bold text-primary">Vision</h2>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                We dream of Filipinos who passionately love their country and whose values and
-                competencies enable them to realize their full potential and contribute meaningfully
-                to building the nation.
+                We dream of Filipinos who passionately love their country and whose competencies and
+                values enable them to realize their full potential and contribute meaningfully to
+                building the nation. As a leamer-centered public institution, the Department of
+                Education continuously improves itself to better service its stakeholders.
               </p>
+              <br></br>
+              <h2 className="text-xl font-bold text-primary">Core Values</h2>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Maka-Diyos</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Maka-tao</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Makakalikasan</p>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">Makabansa</p>
             </div>
           </FadeInOnScroll>
         </div>

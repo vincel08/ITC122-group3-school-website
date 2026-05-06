@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { ChevronDown } from "lucide-react";
-import heroImg from "../assets/hero-school.jpg";
+import heroImg from "../assets/JSCES_3.jpg";
 
 export default function HeroSection() {
   return (
@@ -10,7 +10,7 @@ export default function HeroSection() {
         alt="Jesus S. Cabarrus Elementary School campus"
         width={1920}
         height={1080}
-        className="absolute inset-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-center"
       />
       <div className="hero-overlay absolute inset-0" />
       <div className="relative z-10 mx-auto flex h-full max-w-4xl flex-col items-center justify-center px-4 text-center">

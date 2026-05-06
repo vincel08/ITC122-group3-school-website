@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { BookOpen, Monitor, GraduationCap, UtensilsCrossed } from "lucide-react";
-import activitiesImg from "../assets/school-activities.jpg";
+import activitiesImg from "../assets/JSCES_2.jpg";
 import FadeInOnScroll from "./FadeInOnScroll";
 
 const programs = [

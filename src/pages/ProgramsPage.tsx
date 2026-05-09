@@ -1,4 +1,4 @@
-import activitiesImg from "../assets/school-activities.jpg";
+import activitiesImg from "../assets/JSCES_2.jpg";
 import FadeInOnScroll from "../components/FadeInOnScroll";
 import { BookOpen, Monitor, GraduationCap, UtensilsCrossed, Library, Trophy } from "lucide-react";
 

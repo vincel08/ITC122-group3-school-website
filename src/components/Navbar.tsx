@@ -1,7 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import depedLogo from "../assets/deped-logo.png";
+import depedLogo from "../assets/JSCES_logo.jpg";
 
 const navLinks = [
   { to: "/", label: "Home" },

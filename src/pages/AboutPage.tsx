@@ -38,22 +38,23 @@ export function AboutPage() {
             </p>
             <p>
               The school is managed and supervised by a principal in the person of
-              <strong className="text-foreground"> Mrs. Mary Jane G. Halili</strong> with fifty-two
-              (52) nationally funded teachers who are committed to giving quality education to the
-              pupils, one (1) Volunteer Teacher teaching kindergarten classes, two (2) Utility
-              Workers, two (2) OPSS Guards, and one (1) personal security guard funded through MOOE.
+              <strong className="text-foreground"> Dr. Evangeline R. Quibuyen</strong> with
+              seventy-nine (79) nationally funded teachers who are committed to giving quality
+              education to the pupils, one (1) Volunteer Teacher teaching kindergarten classes, two
+              (2) Utility Workers, two (2) OPSS Guards, and one (1) personal security guard funded
+              through MOOE.
             </p>
             <p>
-              The school is composed of thirty-seven (37) rooms — thirty-two (32) rooms used for
+              The school is composed of fifty-eight (58) rooms — thirty-two (32) rooms used for
               academic purposes and five (5) rooms used as non-academic facilities including a
               library, two (2) feeding areas, an ICT room, and the principal's office.
             </p>
             <p>
               At present, the school has a total enrollment of{" "}
-              <strong className="text-foreground">2,456 pupils</strong> — 1,276 boys and 1,180
-              girls. The school employs a two-shifting scheme to address the need for additional
-              classrooms. Likewise, the school also delivers special programs including ALS A&E
-              Classes (Alternative Learning System — Accreditation & Equivalency).
+              <strong className="text-foreground">2,778 pupils</strong>. The school employs a
+              two-shifting scheme to address the need for additional classrooms. Likewise, the
+              school also delivers special programs including ALS A&E Classes (Alternative Learning
+              System — Accreditation & Equivalency).
             </p>
           </div>
         </FadeInOnScroll>

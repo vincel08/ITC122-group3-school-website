@@ -28,6 +28,7 @@ export function ContactPage() {
         "Solid Cement Corp. Compound",
         "Sitio Tagbac, Brgy. San Jose",
         "Antipolo City, Rizal 1870",
+        "Telephone No.: 028-731-9957",
       ],
     },
     {

@@ -1,6 +1,21 @@
 import activitiesImg from "../assets/JSCES_2.jpg";
 import FadeInOnScroll from "../components/FadeInOnScroll";
-import { BookOpen, Monitor, GraduationCap, UtensilsCrossed, Library, Trophy } from "lucide-react";
+import {
+  BookOpen,
+  Monitor,
+  GraduationCap,
+  UtensilsCrossed,
+  Library,
+  Trophy,
+  Users,
+  UsersRound,
+  Sprout,
+  AlertTriangle,
+  Wrench,
+  ClipboardList,
+  Shield,
+  Heart,
+} from "lucide-react";
 
 export function ProgramsPage() {
   return (
@@ -80,5 +95,50 @@ const programs = [
     icon: Trophy,
     title: "Co-Curricular Activities",
     desc: "Sports, arts, scouting, and other extra-curricular programs that promote teamwork, discipline, creativity, and holistic child development.",
+  },
+  {
+    icon: Users,
+    title: "In-Service Training (INSET)",
+    desc: "Continuous professional development for teachers to improve instruction.",
+  },
+  {
+    icon: UsersRound,
+    title: "Gender and Development (GAD) Training",
+    desc: "Promotes gender equality and awareness in school programs and activities.",
+  },
+  {
+    icon: Sprout,
+    title: "Gulayan sa Paaralan",
+    desc: "School gardening program promoting sustainability and nutrition awareness.",
+  },
+  {
+    icon: AlertTriangle,
+    title: "Disaster Risk Reduction and Management (DRRM)",
+    desc: "Prepares learners and staff for emergencies and disaster response.",
+  },
+  {
+    icon: Wrench,
+    title: "Brigada Eskwela",
+    desc: "Community-led school maintenance and preparation before class openings.",
+  },
+  {
+    icon: ClipboardList,
+    title: "ARAL Program",
+    desc: "Academic remediation and learning support for struggling learners.",
+  },
+  {
+    icon: Users,
+    title: "Supreme Elementary Learner Government (SELG)",
+    desc: "Student leadership body that develops responsibility and governance skills.",
+  },
+  {
+    icon: Shield,
+    title: "18-Day Campaign to End Violence Against Women",
+    desc: "Awareness program promoting safety, respect, and protection of women and children.",
+  },
+  {
+    icon: Heart,
+    title: "Health Program",
+    desc: "School health initiatives including wellness, hygiene, and medical support.",
   },
 ];

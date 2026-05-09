@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: "2,456+", label: "Enrolled Pupils" },
-  { value: "52", label: "Dedicated Teachers" },
-  { value: "37", label: "School Rooms" },
+  { value: "2,778", label: "Enrolled Pupils" },
+  { value: "79", label: "Dedicated Teachers" },
+  { value: "58", label: "School Rooms" },
   { value: "1977", label: "Year Established" },
 ];
 
@@ -43,9 +43,7 @@ export default function StatsSection() {
             <div className="text-3xl font-extrabold text-gold-foreground sm:text-4xl">
               {s.value}
             </div>
-            <div className="mt-1 text-sm font-medium text-gold-foreground/80">
-              {s.label}
-            </div>
+            <div className="mt-1 text-sm font-medium text-gold-foreground/80">{s.label}</div>
           </div>
         ))}
       </div>

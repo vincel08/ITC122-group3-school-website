@@ -34,8 +34,8 @@ export default function AboutPreview() {
               been committed to providing quality education to the community ever since.
             </p>
             <p className="mt-3 leading-relaxed text-muted-foreground">
-              With 52 nationally funded teachers led by Principal Mrs. Mary Jane G. Halili, the
-              school serves over 2,400 pupils across 32 academic classrooms, an ICT room, library,
+              With 79 nationally funded teachers led by Principal Dr. Evangeline R. Quibuyen, the
+              school serves over 2,778 pupils across 58 academic classrooms, an ICT room, library,
               and dedicated feeding areas.
             </p>
             <Link
